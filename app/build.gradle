@@ -4,10 +4,10 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.extremegame.weedmatch"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+   // implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     testImplementation 'junit:junit:4.12'
@@ -29,6 +29,9 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:11.+'
     implementation 'com.google.android.gms:play-services-location:11.+'
 
-    compile files('libs/heyzap-ads-sdk-9.22.0.jar')
-    compile files('libs/unityads-sdk-2.2.1.aar')
+   // compile files('libs/heyzap-ads-sdk-9.22.0.jar')
+    compile files('libs/tapjoyconnectlibrary.jar')
+   compile files('libs/unityads-sdk-2.2.1.aar')
+    //compile files('libs/unity-ads.aar')
+    implementation 'com.fyber:fairbid:9.53.0'
 }
